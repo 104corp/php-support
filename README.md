@@ -18,6 +18,10 @@ $ composer require 104corp/support
 
 這裡是常用的工具實作成 Trait ，可以直接拿來使用，這樣能避免複製貼上所引發的問題。
 
+### ContainerAwareTrait
+
+ContainerAwareTrait 實作設定 PSR-11 的物件。
+
 ### GuzzleClientAwareTrait
 
 GuzzleClientAwareTrait 實作了如何設定 [Guzzle][] Client 的方法。
@@ -25,6 +29,10 @@ GuzzleClientAwareTrait 實作了如何設定 [Guzzle][] Client 的方法。
 它的實作方法是：當 `getHttpClient()` 時，如果 $httpClient 已被 `getHttpClient()` 設定的話，就回傳現有的 $httpClient ；反之，就 new 一個新的。
 
 這個做法可以在測試跟實際使用之間，取得一個較好的平衡。平常使用通常不需要很在意如何初始化 Guzzle ，但在測試需要使用 mock 的時候，這樣設計將能方便地替換真實物件。
+
+### HttpClientAwareTrait
+
+HttpClientAwareTrait 也是設定 [Guzzle][] Client 的方法。不一樣的是，它只依賴 interface 而不是實作，這可以在需要替換 Guzzle 時，有個介面可以實作讓整個程式不需要大改。
 
 ### LoggerTrait
 
