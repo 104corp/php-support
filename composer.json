@@ -4,6 +4,7 @@
     "type": "library",
     "license": "BSD-3-Clause",
     "require": {
+        "php": ">=5.5",
         "psr/container": "^1.0",
         "psr/log": "^1.0"
     },

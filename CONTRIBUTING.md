@@ -57,7 +57,6 @@ PHP Document 建議參考 [104 Guideline][] 上的說明。
 
 使用最常見的 [`major.minor.build`](http://www.ithome.com.tw/voice/85505) 的定義。
 
-
 [PHPUnit]: https://phpunit.de/
 [Composer]: https://getcomposer.org/
 [104 Guideline]: https://github.com/104corp/guideline/blob/master/language/php/phpdoc.md

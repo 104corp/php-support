@@ -9,6 +9,8 @@ use GuzzleHttp\Client;
  */
 trait GuzzleClientAwareTrait
 {
+    use HttpOptionsAwareTrait;
+
     /**
      * @var Client
      */
