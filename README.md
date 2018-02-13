@@ -1,5 +1,8 @@
 # Support
 
+[![Build Status](https://travis-ci.org/104corp/php-support.svg?branch=master)](https://travis-ci.org/104corp/php-support)
+[![Latest Stable Version](https://poser.pugx.org/104corp/support/v/stable)](https://packagist.org/packages/104corp/support)
+
 The 104corp support package.
 
 ## 系統需求
