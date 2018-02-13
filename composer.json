@@ -3,6 +3,9 @@
     "description": "The 104corp support package.",
     "type": "library",
     "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/104corp/php-support/issues"
+    },
     "require": {
         "php": ">=5.5",
         "psr/container": "^1.0",
