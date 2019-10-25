@@ -10,7 +10,7 @@ trait HttpOptionsAwareTrait
     /**
      * @var array
      */
-    protected $httpOptions;
+    protected $httpOptions = [];
 
     /**
      * @return array
