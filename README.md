@@ -1,6 +1,7 @@
 # Support
 
 [![Build Status](https://travis-ci.org/104corp/php-support.svg?branch=master)](https://travis-ci.org/104corp/php-support)
+[![codecov](https://codecov.io/gh/104corp/php-support/branch/master/graph/badge.svg)](https://codecov.io/gh/104corp/php-support)
 [![Latest Stable Version](https://poser.pugx.org/104corp/support/v/stable)](https://packagist.org/packages/104corp/support)
 [![Total Downloads](https://poser.pugx.org/104corp/support/d/total.svg)](https://packagist.org/packages/104corp/support)
 [![License](https://poser.pugx.org/104corp/support/license)](https://packagist.org/packages/104corp/support)
