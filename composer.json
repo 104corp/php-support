@@ -13,8 +13,8 @@
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^6.3",
-        "phpunit/phpunit": "<6",
-        "squizlabs/php_codesniffer": "^3.0"
+        "phpunit/phpunit": "^4.8 | ^5 | ^6 | ^7",
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
         "psr-4": {

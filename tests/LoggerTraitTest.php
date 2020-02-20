@@ -2,13 +2,14 @@
 
 namespace Corp104\Support;
 
+use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
 /**
  * LoggerTrait test
  */
-class LoggerTraitTest extends \PHPUnit_Framework_TestCase
+class LoggerTraitTest extends TestCase
 {
     use LoggerTrait;
 
@@ -17,8 +18,7 @@ class LoggerTraitTest extends \PHPUnit_Framework_TestCase
      */
     public function shouldNotCallLoggerInstanceWhenNotSetLogger()
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
 
         $logger->expects($this->once())
             ->method('log');

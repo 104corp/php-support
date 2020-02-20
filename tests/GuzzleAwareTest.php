@@ -24,7 +24,7 @@ class GuzzleAwareTest extends TestCase
      */
     public function shouldBeSameWhenCallSetAndGetHttpClientWithSmokeTest()
     {
-        $excepted = $this->getMockBuilder(Client::class)->getMock();
+        $excepted = new Client();
 
         $target = $this->getMockForTrait(GuzzleClientAwareTrait::class);
         $target->setHttpClient($excepted);
