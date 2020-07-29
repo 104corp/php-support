@@ -32,7 +32,7 @@ ContainerAwareTrait 實作設定 PSR-11 的物件。
 
 GuzzleClientAwareTrait 實作了如何設定 [Guzzle][] Client 的方法。
 
-它的實作方法是：當 `getHttpClient()` 時，如果 $httpClient 已被 `getHttpClient()` 設定的話，就回傳現有的 $httpClient ；反之，就 new 一個新的。
+它的實作方法是：當 `getHttpClient()` 時，如果 $httpClient 已被 `setHttpClient()` 設定的話，就回傳現有的 $httpClient ；反之，就 new 一個新的。
 
 這個做法可以在測試跟實際使用之間，取得一個較好的平衡。平常使用通常不需要很在意如何初始化 Guzzle ，但在測試需要使用 mock 的時候，這樣設計將能方便地替換真實物件。
 
